@@ -1,5 +1,5 @@
 import React from 'react'
-import { AlbumCard } from 'AlbumCard'
+import { AlbumCard } from 'components/AlbumCard'
 
 export const AlbumsContainer = (props) => {
 

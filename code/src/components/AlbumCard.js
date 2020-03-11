@@ -12,7 +12,7 @@ export const AlbumCard = (props) => {
       <img src={pic} alt="" className="album-img" />
       <ul>
         <li><Heart /></li>
-        <li><Play className="play" /></li>
+        <li className="play"><Play /></li>
         <li><Dots /></li>
       </ul>
       <section>
