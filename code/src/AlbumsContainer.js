@@ -1,21 +1,21 @@
 import React from 'react'
-import { Button } from 'Button'
 import { AlbumCard } from 'AlbumCard'
-import data from './data.json'
 
 export const AlbumsContainer = (props) => {
 
   const { albums } = props
 
   return (
-    <section>
+    <section className="albums-container">
       {albums.map((album) => {
         return (
           <AlbumCard
             key={album.id}
             title={album.name}
             artists={album.artists}
-            pic={album.images[0].url} />
+            pic={album.images[0].url}
+            albumLink={album.external_urls.spotify}
+          />
         )
       })}
     </section>
