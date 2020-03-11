@@ -14,11 +14,10 @@ export const AlbumsContainer = (props) => {
           <AlbumCard
             key={album.id}
             title={album.name}
-            artists={album.artists} />
+            artists={album.artists}
+            pic={album.images[0].url} />
         )
       })}
-      <h1>Title</h1>
-      <Button link={data.albums.href} total={data.total} />
     </section>
   )
 }
