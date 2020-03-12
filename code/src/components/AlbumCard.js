@@ -16,7 +16,7 @@ export const AlbumCard = (props) => {
         <li><Dots /></li>
       </ul>
       <section>
-        <h1><a href={albumLink}>{title}</a></h1>
+        <h2><a href={albumLink}>{title}</a></h2>
         {artists.map(item => {
           return (
             <p key={item.id}><a href={item.external_urls.spotify}>{item.name}</a></p>

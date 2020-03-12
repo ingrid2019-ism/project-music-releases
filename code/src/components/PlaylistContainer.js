@@ -10,8 +10,7 @@ export const PlaylistContainer = (props) => {
       {playlists.map((playlist) => {
         return (
           <>
-            <h2 key={playlist.id}>{playlist.name}</h2>
-            <p>by {playlist.owner.display_name}</p>
+            <h2 key={playlist.id}><a href={playlist.external_urls.spotify}>{playlist.name}</a></h2>
           </>
         )
       })

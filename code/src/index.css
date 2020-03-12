@@ -26,11 +26,46 @@ code {
 
 /* MAIN */
 
-main{
-  background-color: #181818;
+#root {
+  display: flex;
 }
 
+/* SIDEBAR */
+
+aside{
+  width: 300px;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.side-container{
+  
+}
+
+h1{
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+aside h2{
+  padding: 0.5rem 0;
+  color: #a0a0a0;
+  
+}
+
+aside h2:hover{
+  color: white;
+}
+
+
 /* ALBUMS CONTAINER */
+
+main{
+  background-color: #181818;
+  width: 85vw;
+}
 
 .albums-container {
   display: grid;
@@ -53,7 +88,7 @@ main{
   grid-column: 1/2;
 }
 
-h1, p{
+h2, p{
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -64,7 +99,7 @@ p{
   color: #a0a0a0;
 }
 
-h1:hover, p:hover{
+h2:hover, p:hover{
   text-decoration: underline;
 }
 
